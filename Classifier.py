@@ -107,7 +107,7 @@ g = Embedding(len(word_index)+1,embedding_dim,weights=[embedding_matrix])(main_i
 #Plusieurs couches de convolution pour analyser les motifs de tailles differentes
 #dans les phrases interessantes
 ms=[]
-for i in range(1,3,2):
+for i in range(1,12,2):
     m=Convolution1D(30,i,border_mode='valid',activation='relu',init='normal')(g)
     m=LSTM(30,W_regularizer=l2(0.1),return_sequences=True)(m)
     m=Flatten()(m)
