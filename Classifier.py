@@ -10,7 +10,8 @@ Ce code est écrit en python 2. Cela posera problème pour un utilisateur de
 python 3, en raison de la gestion des strings, qui va faire échouer la ligne
 definissant l'objet "normal" (ligne censee remplacer tous les accents et caracteres
 speciaux problematiques en python 2, elle va uniquement les supprimer en python 3).
-Au pire, ne pas regarder la colonne cleanée, mais le texte brut. Les performances ne seront aps énormément différentes.
+Au pire, ne pas regarder la colonne cleanée, mais le texte brut. 
+Les performances ne seront pas énormément différentes.
 
 Le package keras est utilise avec le backend theano, et non tensorflow, qui
 gere mal le merging de modeles en keras. Il vaut mieux runner le NN avec 
